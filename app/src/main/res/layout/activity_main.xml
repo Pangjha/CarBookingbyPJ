@@ -16,7 +16,7 @@
           android:ems="10"
           android:id="@+id/editText" android:layout_marginBottom="16dp"
           app:layout_constraintBottom_toTopOf="@+id/editText2" app:layout_constraintTop_toBottomOf="@+id/imageButton"
-          android:textAlignment="center" android:textColor="#F7EEEE" android:fontFamily="@font/advent_pro_bold"
+          android:textAlignment="center" android:textColor="#F7EEEE" android:fontFamily="@font/comfortaa"
           android:textSize="24sp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
           android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"/>
   <EditText
@@ -27,7 +27,7 @@
           android:ems="10"
           android:id="@+id/editText2" android:layout_marginBottom="16dp"
           app:layout_constraintBottom_toTopOf="@+id/editText3" app:layout_constraintTop_toBottomOf="@+id/editText"
-          android:textAlignment="center" android:textColor="#F7EEEE" android:fontFamily="@font/advent_pro_bold"
+          android:textAlignment="center" android:textColor="#F7EEEE" android:fontFamily="@font/comfortaa"
           android:textSize="24sp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
           android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"/>
   <EditText
@@ -38,7 +38,7 @@
           android:ems="10"
           android:id="@+id/editText3"
           app:layout_constraintTop_toBottomOf="@+id/editText2" app:layout_constraintBottom_toTopOf="@+id/button2"
-          android:textAlignment="center" android:textColor="#F7EEEE" android:fontFamily="@font/advent_pro_bold"
+          android:textAlignment="center" android:textColor="#F7EEEE" android:fontFamily="@font/comfortaa"
           android:textSize="24sp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
           android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"/>
   <Button
@@ -48,42 +48,47 @@
           android:id="@+id/button2" android:layout_marginTop="24dp"
           app:layout_constraintTop_toBottomOf="@+id/editText3"
           app:layout_constraintBottom_toTopOf="@+id/button3" android:textColor="@color/colorPrimary"
-          android:background="@android:color/transparent" android:layout_marginStart="8dp"
+          android:background="@color/cardview_shadow_end_color" android:layout_marginStart="8dp"
           app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-          app:layout_constraintEnd_toEndOf="parent" android:textColorHint="#FDFFFFFF"/>
+          app:layout_constraintEnd_toEndOf="parent" android:textColorHint="#FDFFFFFF"
+          android:fontFamily="@font/comfortaa" android:textSize="30sp"/>
   <Button
           android:text="delete"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:id="@+id/button3" android:layout_marginTop="16dp"
+          android:id="@+id/button3" android:layout_marginTop="2dp"
           app:layout_constraintTop_toBottomOf="@+id/button2" app:layout_constraintBottom_toBottomOf="parent"
           android:shadowColor="#00FCFAFA" android:textColor="@color/colorAccent"
-          android:background="@android:color/transparent" android:layout_marginStart="8dp"
+          android:background="@color/cardview_shadow_end_color" android:layout_marginStart="8dp"
           app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-          app:layout_constraintEnd_toEndOf="parent" android:textColorHint="@color/cardview_light_background"/>
+          app:layout_constraintEnd_toEndOf="parent" android:textColorHint="@color/cardview_light_background"
+          android:fontFamily="@font/comfortaa" android:textSize="30sp"/>
   <ImageButton
           android:layout_width="80dp"
-          android:layout_height="86dp" app:srcCompat="@drawable/car6"
+          android:layout_height="86dp" app:srcCompat="@drawable/ready1"
           android:id="@+id/imageButton"
           app:layout_constraintEnd_toStartOf="@+id/imageButton2" android:layout_marginEnd="8dp"
           app:layout_constraintStart_toEndOf="@+id/imageButton3" app:layout_constraintHorizontal_bias="0.5"
-          android:background="@color/cardview_light_background"
-          android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+          android:background="@android:color/transparent"
+          android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView3"
+          android:scaleType="fitCenter"/>
   <ImageButton
           android:layout_width="80dp"
-          android:layout_height="86dp" app:srcCompat="@drawable/car6"
+          android:layout_height="86dp" app:srcCompat="@drawable/full1"
           android:id="@+id/imageButton3"
           app:layout_constraintEnd_toStartOf="@+id/imageButton" android:layout_marginEnd="8dp"
           app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
-          android:background="@color/cardview_light_background"
-          android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+          android:background="@android:color/transparent"
+          android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView3"
+          android:scaleType="fitCenter"/>
   <ImageButton
           android:layout_width="80dp"
-          android:layout_height="86dp" app:srcCompat="@drawable/car6"
+          android:layout_height="86dp" app:srcCompat="@drawable/ready1"
           android:id="@+id/imageButton2"
           app:layout_constraintStart_toEndOf="@+id/imageButton" app:layout_constraintHorizontal_bias="0.5"
-          app:layout_constraintEnd_toEndOf="parent" android:background="@color/cardview_light_background"
-          android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+          app:layout_constraintEnd_toEndOf="parent" android:background="@android:color/transparent"
+          android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView3"
+          android:scaleType="fitCenter"/>
   <TextView
           android:text="CarBooking"
           android:layout_width="wrap_content"
